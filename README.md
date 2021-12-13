@@ -1,2 +1,2 @@
 # My-Projects
-Projects i have done solo or co-op :)
+Projects i have contributed in
