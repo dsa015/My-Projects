@@ -1,0 +1,193 @@
+
+<!-- **************************************
+Student responsible for this file:
+  - Roald Andre Kvarv
+*******************************************
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About us - BoB</title>
+
+        <!--
+            Importing fonts from Google Fonts
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cabin:wght@400;700&family=Mohave:wght@500&display=swap" rel="stylesheet">
+
+        <!--
+            Icons
+        -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/3a5930850e.js" crossorigin="anonymous"></script>
+
+        <!--
+            Stylesheet for mobile users
+        -->
+        <link rel="stylesheet" media="(hover: none)" href="../stylesheets/general_mobile.css"/>
+
+        <!--
+            Stylesheet for computer users
+        -->
+        <link rel="stylesheet" media="(hover: hover)" href="../stylesheets/general_computer.css"/>
+        <link rel="stylesheet" href="../stylesheets/about_us_computer.css">
+
+        <!--
+            Icon for the tab
+        -->
+        <link rel="icon" href="../images/icon.png">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <input type="checkbox" id="fake_check" />
+
+                <span class="hamb"></span>
+                <span class="hamb"></span>
+                <span class="hamb"></span>
+
+                <ul id="nav_bar">
+                    <li class="nav_elem" id ="nav1">
+                        <a class="nav_link" href="cafes.html">Cafés</a>
+                    </li>
+                    <li class="nav_elem" id ="nav2">
+                        <a class="nav_link" href="restaurants.html">Restaurants</a>
+                    </li>
+                    <li class="nav_elem" id ="nav3">
+                        <a class="nav_link" href="bars.html">Bars</a>
+                    </li>
+                    <li class="nav_elem" id ="nav4">
+                        <a class="nav_link" href="shops.html">Shops</a>
+                    </li>
+                    <li class="nav_elem" id ="nav5">
+                        <a class="nav_link" href="about.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1><a class="main_title" href="../index.html">Bergen on a budget</a></h1>
+        </header>
+
+        <main>
+          <!--
+          *****************************************
+          Student individual about us informatiom
+          ********************************
+          -->
+          <h2 id="site_header">About Us</h2>
+          <div class="outer-container" id="footerMargin">
+            <div class="profile_container">
+              <div class="about_container">
+                  <h2 id="firstUser">Roald Andre Kvarv</h2>
+                  <h3>Information Science Student</h3>
+
+                  <img src="../images/portraits/roald.jpg" alt="photograph of Roald" width="100">
+
+                  <p>Final year bachelor student at the university of Bergen.
+                  Planning to take masters degree</p>
+
+                  <a href="#getInTouch" class="getInTouch">Get In Touch</a>
+              </div>
+
+              <div class="about_container">
+                  <h2>Diluxan Sathalingam</h2>
+                  <h3>Information Science Student</h3>
+
+                  <img src="../images/portraits/dilu.jpg" alt="photograph of Dilu" width="100">
+
+                  <p>Bachelors student in his third and final year at the University of Bergen.</p>
+
+                  <a href="#getInTouch" class="getInTouch">Get In Touch</a>
+              </div>
+
+              <div class="about_container">
+                  <h2>Jorge de Miguel Pires</h2>
+                  <h3>Computer Science and Mathematics Student</h3>
+
+                  <img src="../images/portraits/jorge.jpg" alt="photograph of Jorge" width="100">
+
+                  <p>
+                      Bachelor student in his forth year at Universidad Autónoma de Madrid,
+                      doing an exchange at UiB.
+                  </p>
+
+                  <a href="#getInTouch" class="getInTouch">Get In Touch</a>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          <!--
+          ********************************
+          Contact Us Information
+          ********************************
+          -->
+
+          <section class="contact" id="getInTouch">
+              <div class="content">
+                  <h2>Contact Us</h2>
+                  <p>If you ever want to get in contact with us, or ask us a
+                    question, do not hesitate to send us a message using the
+                    form below!</p>
+              </div>
+              <div class="container">
+                  <address class="contactInfo">
+                      <div class="box">
+                          <figure class="icon"><i class="fas fa-map-marker-alt"></i></figure>
+                          <div class="text">
+                              <h3>Address</h3>
+                              <p>5263 Fantasy Kebab Road, <br>Bergen, Norway, <br>55060</p>
+                          </div>
+                      </div>
+                      <div class="box">
+                          <figure class="icon"><i class="fas fa-phone"></i></figure>
+                          <div class="text">
+                              <h3>Phone</h3>
+                              <a href="tel:[216669112]"><p>21-666-9112</p></a>
+                          </div>
+                      </div>
+                      <div class="box">
+                          <figure class="icon"><i class="far fa-envelope"></i></figure>
+                          <div class="text">
+                              <h3>Email</h3>
+                              <a href="mailto:bigemail@gmail.com"><p>bigemail@gmail.com</p></a>
+                          </div>
+                      </div>
+                    </address>
+
+                  <!--
+                  ********************************
+                  Contact Us Form
+                  ********************************
+                  -->
+
+                  <form class="contactForm">
+                      <h2>Send Message</h2>
+                      <label class="inputBox">
+                          <input type="text" name="full_name" required="required">
+                          <span>Full Name</span>
+                      </label>
+                      <label class="inputBox">
+                          <input type="text" name="email" required="required">
+                          <span>Email</span>
+                      </label>
+                      <label class="inputBox">
+                          <textarea required="required"></textarea>
+                          <span>Type your Message...</span>
+                      </label>
+                      <div class="inputBox">
+                          <input type="submit" name="submit_button" value="Send">
+                      </div>
+                  </form>
+              </div>
+          </section>
+        </footer>
+    </body>
+</html>

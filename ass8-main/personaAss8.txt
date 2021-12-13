@@ -1,0 +1,26 @@
+Persona
+Name - Günther Müller
+Age - 21
+Nationality - German
+Occupation - Student, journalism 
+
+Likes - Reading newspaper, following apps that shows different products on sale.
+
+User story: "As a student, I want a website that shows affordable products here in Bergen. So
+that I can buy household goods for my apartment."
+
+Scenario - Günther came to bergen as a student and is looking to buy household goods
+for his new apartment, but he is struggling to find affordable places to buy them from.
+since he is quite shy to make friends as a first year student, he 
+decides to use the website "Bergen on a Budget" to find affordable places to buy household goods.
+A friend of his who already finished his exchange time here in Bergen, told him about
+a website where you can find affordable places to buy items for. He searches the website
+on his phone.
+
+On the website, the first thing that he noticed was the title and information about the site,
+greeting the user with a "Welcome". He finds the menu on the 
+left hand side as a hamburger menu beside the logo "Bergen on a budget" where he later finds the "shop" category. Under the category, 
+he goes to the subcategory "Household goods". Here it shows 2 places
+where he can buy household items. In this case he wanted to buy furnitures and found
+out about about IKEA and decides to go there (Åsane) to buy products.
+	
