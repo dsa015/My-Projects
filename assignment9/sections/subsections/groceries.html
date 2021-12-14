@@ -1,0 +1,186 @@
+<!--
+    *********************************************************
+        Student responsible for this file: Jorge de Miguel
+    *********************************************************
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Groceries shops - BoB</title>
+
+        <!--
+            Importing fonts from Google Fonts
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cabin:wght@400;700&family=Mohave:wght@500&display=swap" rel="stylesheet">
+
+        <!--
+            Stylesheet for mobile users
+        -->
+        <link rel="stylesheet" media="(hover: none)" href="../../stylesheets/general_mobile.css"/>
+        <link rel="stylesheet" media="(hover: none)" href="../../stylesheets/sections_mobile.css"/>
+
+        <!--
+            Stylesheet for computer users
+        -->
+        <link rel="stylesheet" media="(hover: hover)" href="../../stylesheets/general_computer.css"/>
+        <link rel="stylesheet" media="(hover: hover)" href="../../stylesheets/sections_computer.css"/>
+
+        <!--
+            Icon for the tab
+        -->
+        <link rel="icon" href="../../images/icon.png">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <!--
+                    This part is just for the mobile version
+                -->
+                <input type="checkbox" id="fake_check" />
+
+                <span class="hamb"></span>
+                <span class="hamb"></span>
+                <span class="hamb"></span>
+
+                <!--
+                    Navigation bar
+                -->
+                <ul id="nav_bar">
+                    <li class="nav_elem" id ="nav1">
+                        <a class="nav_link" href="../cafes.html">Cafés</a>
+                    </li>
+                    <li class="nav_elem" id ="nav2">
+                        <a class="nav_link" href="../restaurants.html">Restaurants</a>
+                    </li>
+                    <li class="nav_elem" id ="nav3">
+                        <a class="nav_link" href="../bars.html">Bars</a>
+                    </li>
+                    <li class="nav_elem" id ="nav4">
+                        <a class="nav_link" href="../shops.html">Shops</a>
+                    </li>
+                    <li class="nav_elem" id ="nav5">
+                        <a class="nav_link" href="../about.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--
+                Main title
+            -->
+            <h1><a class="main_title" href="../../index.html">Bergen on a budget</a></h1>
+        </header>
+
+        <main>
+            <!--
+                Breadcrumbs at the top of the page for the second navigation elements
+            -->
+            <section id="breadcrumbs">
+                <h2 id="bc_title">Breadcrumbs</h2>
+                <p>
+                    <a href="../shops.html">Shops</a> > Groceries
+                </p>
+            </section>
+
+            <!--
+                Introduction of the section
+            -->
+            <h2>Groceries shops</h2>
+            
+            <p>
+                There are many supermarkets around Bergen, but if you wanna save some money, 
+                we recommend sticking to the ones you find in this page. The most important  
+                thing when shopping on a budget is to look for <em>First price</em> or 
+                <em>Prima</em> brand product. These are usually the cheapest ones.
+            </p>
+            <p>
+                Another good advice is to download one of the apps that shows all the offers
+                and deals of every supermarket. We recommend the one called 
+                <a href="https://kupp.no/">Kupp</a>. This way you won't miss any offer that
+                they release.
+            </p>
+
+            <!--
+                Cards with recommendations
+            -->
+            <section>
+                <h3>Recommendations</h3>
+
+                <article class="cards">
+                    <h4>Kiwi</h4>
+                    <img src="../../images/shops/kiwi.jpg" alt="Kiwi front door">
+                    <ul class="cards">
+                        <li>
+                            <span class="info">Description:</span> the cheapest 
+                            supermarket in Bergen. There's many of them all around the city
+                            and they have a big variety of products, from food to cleaning
+                            and hygiene products.
+                        </li>
+                        <li>
+                            <span class="info">Location:</span> Strømgaten 
+                            38, 5008 Bergen, Norway
+                        </li>
+                        <li>
+                            <span class="info">Opening hours:</span> 
+                            Monday to Saturday: 7am - 11pm
+                        </li>
+                        <li>
+                            <span class="info">Phone number:</span> +47 55 90 06 73
+                        </li>
+                        <li>
+                            <span class="info">Website:</span>
+                            <a href="https://kiwi.no/">kiwi.no</a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="cards">
+                    <h4>Rema</h4>
+                    <img src="../../images/shops/rema1000.jpg" alt="Rema1000 facade">
+                    <ul class="cards">
+                        <li>
+                            <span class="info">Description:</span> after Kiwi,
+                            this is the next cheapest supermarket. There's also a 
+                            bunch of them around Bergen. We recommend going there 
+                            to buy vegetables, since they are most of the time 
+                            pretty cheap and really good quality.
+                        </li>
+                        <li>
+                            <span class="info">Location:</span> Jon Smørs 
+                            gate 11, 5011 Bergen, Norway
+                        </li>
+                        <li>
+                            <span class="info">Opening hours:</span> 
+                            Monday to Saturday: 7am - 11pm
+                        </li>
+                        <li>
+                            <span class="info">Phone number:</span> +47 55 90 28 98
+                        </li>
+                        <li>
+                            <span class="info">Website:</span>
+                            <a href="https://www.rema.no/">rema.no</a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="../about.html">About us</a>
+                </li>
+                <li>
+                    <a href="../about.html#getInTouch">Contact us</a>
+                </li>
+            </ul>
+            <p>Created by Diluxan, Jorge and Roald</p>
+            <p>DIKULT105, Autumn 2021</p>
+        </footer>
+    </body>
+</html>

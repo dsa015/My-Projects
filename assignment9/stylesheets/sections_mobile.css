@@ -1,0 +1,98 @@
+/*
+ * BREADCRUMBS
+ */
+ #breadcrumbs {
+    padding-top: 0.5em;
+    font-size: 0.85em;
+}
+
+#bc_title {
+    display: none;
+}
+
+
+/*
+ * STYLING OF THE  "CARDS" AND
+ * ALL THE ELEMENTS INSIDE OF THEM
+ */
+article.cards {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #020659;
+    border-radius: 10px;
+
+    background-color: #D8DEF2;
+
+    margin-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-family: 'Mohave', sans-serif;
+}
+
+h5 {
+    font-family: 'Mohave', sans-serif;
+    font-size: 1.35em;
+}
+
+img {
+    width: 90%;
+    box-shadow: 5px 5px 12px 4px grey;
+}
+
+ul.cards {
+    list-style: none;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.25em;
+}
+
+ul.cards li {
+    margin-bottom: 0.25em;
+}
+
+ul.cards ul li{
+    margin-bottom: 0em;
+}
+
+span.info {
+    font-weight: 700;
+}
+
+footer {
+    font-size: 1.25em;
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+}
+
+footer ul {
+    padding-left: 5%;
+    list-style: none;
+}
+
+footer li {
+    padding-bottom: 2%;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:visited {
+    color: #D8DEF2;
+}
+
+footer p {
+    text-align: center;
+    color: #D8DEF2;
+    font-size: 1em;
+}

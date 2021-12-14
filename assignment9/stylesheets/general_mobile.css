@@ -1,0 +1,382 @@
+/********************************************************
+    Student responsible for this file :
+        Jorge de Miguel
+    Student responsible for the "footer" part:
+        Roald Andre Kvarv
+*********************************************************/
+
+/*
+ * GENERAL CSS FOR ALL THE HTML DOCUMENTS
+ * VISUALIZED IN A MOBILE SCREEN.
+ *
+ * HERE WE SPECIFY ALL THE COMMONS THINGS
+ * SUCH AS THE STRUCTURE AND STYLE OF THE
+ * COMMONS ELEMENTS (NAVIGATION BAR, FOOTER),
+ * THE STYLE OF THE TITLE, ETC.
+ *
+ * For every non-general styles we do it in
+ * the stylesheets called <name_html>_<device>.css
+ */
+ @font-face {
+    src: url('../fonts/Holiday\ In\ Monday.otf');
+    font-family:  holiday;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/*************************************************
+ * Header
+ ************************************************/
+header {
+    background-image: linear-gradient(to bottom right, rgb(51, 90, 172), rgb(63, 165, 148));
+    background-clip: border-box;
+
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 10vw 1fr 10vw;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+    
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+a.main_title {
+    text-decoration: none;
+    color: white;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+a.main_title:hover, a.main_title:visited {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-family:'holiday', sans-serif;
+    font-size: 10vw;
+}
+
+
+
+
+
+/*************************************************
+ * Navigation bar
+ ************************************************/
+nav {
+    display: block;
+    position: relative;
+    top: 5%;
+    left: 5%;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.75em;
+    font-family: 'Mohave', sans-serif; 
+
+    transition: color 0.3s ease;
+}
+
+#fake_check {
+    width: 40px;
+    height: 32px;
+
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    opacity: 0;
+    z-index: 2;
+}
+
+nav span {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+
+    width: 6vw;
+    height: 0.75vw;
+
+    background: white;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 0.75vw 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+nav span:first-child {
+    transform-origin: 0% 0%;
+}
+
+nav span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#fake_check:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-0.2vw, -0.1vw);
+    background: black;
+}
+
+#fake_check:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.3, 0.3);
+}
+
+#fake_check:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0.4vw, -0.6vw);
+}
+
+#nav_bar {
+    position: absolute;
+    width: 85vw;
+    height: 100vh;
+    margin: -100px 0 0 -10vw;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: #D8DEF2;
+    list-style-type: none;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.nav_elem {
+    padding: 10px 0;
+    margin: 5vh;
+    font-size: 1.5em;
+
+    font-family: 'Mohave', sans-serif;
+}
+
+#fake_check:checked ~ ul {
+    transform: none;
+}
+
+
+
+
+/*************************************************
+ * Main
+ ************************************************/
+ main {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 5%;
+
+    background-color: #629bc9;
+}
+
+h2 {
+    font-family: "Mohave", sans-serif;
+    font-size: 2em;
+    color: black;
+}
+
+h3 {
+    font-family: "Mohave", sans-serif;
+    font-size: 1.75em;
+}
+
+p {
+    font-family: "Cabin", sans-serif;
+    font-size: 1.25em;
+    color: black;
+}
+
+
+
+
+/*************************************************
+ * Footer
+ ************************************************/
+footer {
+    background-color: #1d2739;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.container .contactInfo,
+.contactForm {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #00bcd4;
+
+}
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 300;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contact .text p {
+    color: white;
+}
+.contact a {
+    color: #FFC895;
+}
+

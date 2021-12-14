@@ -1,0 +1,129 @@
+/********************************************************
+    Student responsible for this file :
+        Jorge de Miguel
+*********************************************************/
+
+/*************************************************
+ * Breadcrumbs
+ ************************************************/
+#breadcrumbs {
+    padding-top: 0.5em;
+    font-size: 0.85em;
+}
+
+#bc_title {
+    display: none;
+}
+
+
+/*************************************************
+ * Cards and its elements
+ ************************************************/
+article.cards {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #020659;
+    border-radius: 10px;
+
+    background-color: #D8DEF2;
+
+    margin-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    display: grid;
+    grid-template-columns: 34% 66%;
+    grid-template-rows: 20% 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+h4 {
+    font-family: 'Mohave', sans-serif;
+    font-size: 1.75em;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+h5 {
+    font-family: 'Mohave', sans-serif;
+    font-size: 1.5em;
+}
+
+img {
+    width: 90%;
+    box-shadow: 5px 5px 12px 4px grey;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+ul.cards {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    list-style: none;
+    font-family: "Cabin", sans-serif;
+    font-size: 1.5em;
+}
+
+ul.cards li {
+    margin-bottom: 0.3em;
+}
+
+ul.cards ul li{
+    margin-bottom: 0em;
+}
+
+span.info {
+    font-weight: 700;
+}
+
+
+/*************************************************
+ * Footer
+ ************************************************/
+footer {
+    font-size: 1.5em;
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+}
+
+footer ul {
+    padding-left: 5%;
+    list-style: none;
+}
+
+footer li {
+    padding-bottom: 2%;
+}
+
+footer a {
+    color: white;
+    transition: 0.2s;
+}
+
+footer a:hover {
+    color: grey;
+    font-size: 1.2em;
+}
+
+footer a:visited {
+    color: #D8DEF2;
+}
+
+footer p {
+    text-align: center;
+    color: #D8DEF2;
+    font-size: 0.8em;
+}

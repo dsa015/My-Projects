@@ -1,0 +1,16 @@
+Install the font first before use.
+
+How to install font
+windows :
+https://www.fontspring.com/support/installing/how-do-i-install-fonts-on-my-windows-pc
+mac :
+https://www.fontspring.com/support/installing/how-do-i-install-fonts-on-my-mac
+
+
+How to use open type features
+- Install the OTF Version,
+- PS/AI user : https://helpx.adobe.com/illustrator/using/special-characters.html
+
+
+Thank You,
+Sarid Ezra - www.saridezra.com

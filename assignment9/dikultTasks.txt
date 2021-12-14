@@ -1,0 +1,22 @@
+make a robot.txt file (search in google)
+
+about us page/contact form (about the creators of the page, us essentially)
+
+at least 1 sub navigation
+
+adaptibility/scaling
+
+viewport for mobile, then scale it up
+
+copyright
+
+validate code
+
+persona
+
+comment code, to explain things maybe
+
+video representation
+
+plan meetings (could make scrums, and be clear on what to do/trello)
+

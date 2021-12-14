@@ -1,0 +1,130 @@
+/*****************************************************
+Student responsible for this file: Diluxan Sathalingam
+*****************************************************/
+
+section {
+    display: grid;
+
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: 10% 90%;
+
+    justify-items: center;
+    align-items: center;
+    
+    justify-content: space-between;
+    align-content: space-evenly;
+}
+
+h3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    justify-self: start;
+}
+
+h4 {
+    font-family: 'Mohave', sans-serif;
+    font-size: 1.75em;
+
+    transition: 0.2s;
+}
+
+img {
+    width: 15em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px grey;
+    margin-bottom: 1em;
+
+    transition: 0.2s;
+}
+
+.subcat_box {
+    background-color: #D8DEF2;
+    border: 5px;
+    border-style: solid;
+    border-color: #002db3;
+    border-radius: 50px;
+
+    width: 100%;
+    text-align: center;
+
+    padding-bottom: 15px;
+
+    transition: 0.2s;
+}
+
+.subcat_box:hover {
+    width: 102%;
+    height: 80%;
+}
+
+.subcat_box:hover h4 {
+    font-size: 1.85em;
+}
+
+.subcat_box:hover img {
+    width: 16em;
+}
+
+
+a.subcat {
+    text-decoration: none;
+    color: black;
+}
+
+#clothing {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#groceries {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#household {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+footer {
+    font-size: 1.5em;
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+}
+
+footer ul {
+    padding-left: 5%;
+    list-style: none;
+}
+
+footer li {
+    padding-bottom: 2%;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: grey;
+    font-size: 1.2em;
+}
+
+footer a:visited {
+    color: #D8DEF2;
+}
+
+footer p {
+    text-align: center;
+    color: #D8DEF2;
+    font-size: 0.8em;
+}

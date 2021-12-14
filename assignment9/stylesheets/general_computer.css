@@ -1,0 +1,361 @@
+/********************************************************
+    Student responsible for this file :
+        Jorge de Miguel
+    Student responsible for the "footer" part:
+        Roald Andre Kvarv
+*********************************************************/
+
+/*
+ * GENERAL CSS FOR ALL THE HTML DOCUMENTS
+ * VISUALIZED IN A COMPUTER SCREEN.
+ *
+ * HERE WE SPECIFY ALL THE COMMONS THINGS
+ * SUCH AS THE STRUCTURE AND STYLE OF THE
+ * COMMONS ELEMENTS (NAVIGATION BAR, FOOTER),
+ * THE STYLE OF THE TITLE, ETC.
+ *
+ * For every non-general styles we do it in
+ * the stylesheets called <name_html>_<device>.css
+ */
+
+
+/*************************************************
+ * General structure
+ ************************************************/
+@font-face {
+    src: url('../fonts/Holiday\ In\ Monday.otf');
+    font-family:  holiday;
+
+}
+
+@font-face {
+    src: url('../fonts/Mister London Sans.otf');
+    font-family:  ml;
+    
+}
+
+ body {
+    padding: 0em;
+    margin: 0em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*************************************************
+ * Header
+ ************************************************/
+header {
+    background-image: linear-gradient(to bottom right, rgb(51, 90, 172), rgb(63, 165, 148));
+    background-clip: border-box;
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+h1 {
+    font-family:'holiday', sans-serif;
+    font-size: 5em;
+}
+
+
+a.main_title {
+    order: 0;
+    text-decoration: none;
+    color: white;
+}
+
+a.main_title:hover, a.main_title:visited {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/*************************************************
+ * Navigation bar
+ ************************************************/
+nav {
+    order: 1;
+    height: 55px;
+ 
+    margin: 0em;
+    padding: 0em;
+}
+
+/* Hiding elements of mobile navigation */
+input#fake_check, span.hamb {
+    display: none;
+}
+
+ul#nav_bar {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+
+    justify-items: center;
+    align-items: center;
+
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+    margin: 0em;
+    padding: 0%;
+
+    list-style-type: none;
+}
+
+a.nav_link {
+    display: inline-block;
+    position: relative;
+    top: 0.5em;
+    width: 100%;
+    height: 80%;
+
+    text-decoration: none;
+    color: white;
+}
+
+a.nav_link:hover, a.nav_link:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_elem {
+    height: 55px;
+    width: 100%;
+    text-align: center;
+
+    border: 5px;
+    background-color: #1d2739 ;
+
+    font-family: 'Mohave', sans-serif;
+    font-size: 1.5em;
+    transition: 0.25s;
+}
+
+.nav_elem:hover {
+    font-size: 1.63em;
+}
+
+#nav1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#nav2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#nav3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#nav4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+#nav5 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+
+
+
+/*************************************************
+ * Main
+ ************************************************/
+main {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 5%;
+
+    background-color: #629bc9;
+}
+
+h2 {
+    font-family: 'Mohave', sans-serif;
+    margin-top: 3%;
+    font-size: 2.25em;
+}
+
+h3 {
+    font-family: 'Mohave', sans-serif;
+    font-size: 2em;
+}
+
+p {
+    font-family: "Cabin", sans-serif;
+    font-size: 1.5em;
+}
+
+a {
+    color: #002db3;
+}
+
+a:hover {
+    color: rgb(7, 0, 100);
+}
+
+a:visited {
+    color: #64088b;
+}
+
+
+
+/*************************************************
+ * Footer
+ ************************************************/
+footer {
+    background-color: #1d2739;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text .secondTitle {
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm {
+    width: 40%;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background: #fff;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 300;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
