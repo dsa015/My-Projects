@@ -1,6 +1,7 @@
 from PyMovieDb import IMDB
 import json
 import requests
+import os
 
 from kafka import KafkaConsumer, KafkaProducer
 
