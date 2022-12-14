@@ -1,13 +1,8 @@
 from pyspark.sql import SparkSession
 import json
 from twitterpipe_globals import *
-from pyspark.sql.functions import decode, get_json_object
-from pyspark.sql.functions import udf
-from pyspark.sql.types import DoubleType
-from pyspark.sql.types import StructType, StructField, StringType
-from pyspark.sql.functions import decode, from_json
-
-
+from pyspark.sql.functions import decode, get_json_object, udf, avg, current_timestamp, decode, from_json
+from pyspark.sql.types import DoubleType, StructType, StructField, StringType
 
 
 # Spark tweet receiver ---------------------------------------------------------
@@ -119,7 +114,7 @@ selected_rating_sdf = rating_sdf \
 
 
 #Queries to turn on or off, two dataframe outputs
-
+watermark = "10 minutes"
 # Shows whole dataframe with each tweets afinn score 
 joined_sdf = sentiment_sdf.join(selected_rating_sdf, 'id', 'inner')
 
@@ -138,14 +133,14 @@ avg_df = grouped_df.withColumnRenamed("avg(afinn_score)", "avg_score")
 
 
 #output for joined sdf
-ouput1 = joined_sdf \
+output1 = joined_sdf \
         .writeStream \
         .outputMode('append') \
         .format("console") \
         .start()
 output1.awaitTermination()
 
-#output, can turn off the other output and then turn this on
+#can turn off the other output and then turn this on
 #output2 = avg_df \
 #        .writeStream \
 #        .outputMode('update') \
