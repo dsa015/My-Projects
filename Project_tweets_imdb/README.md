@@ -1,16 +1,16 @@
-PROJECT ABOUT SCRAPING TWEETS ABOUT MOVIES, DOING SENTIMENT ANALYSIS AND COMPARE THEM TO IMDB MOVIE'S RATINGS
+# PROJECT ABOUT SCRAPING TWEETS ABOUT MOVIES, DOING SENTIMENT ANALYSIS AND COMPARE THEM TO IMDB MOVIE'S RATINGS
 
 
 
-README file til gruppeprosjekt i INFO319 Big Data: En sentimental analyse av movie-tweets fra twitter, sammenlignet med ratings fra imdb
-Kandidatnr: 117 og 130
+## README file til gruppeprosjekt i INFO319 Big Data: En sentimental analyse av movie-tweets fra twitter, sammenlignet med ratings fra imdb
+
  
 - For å kjøre koden, trengs det access til V2 endpoint av twitter. 
 - Eneste token man trenger å legge inn, er bearer token. Dette gjøres i "tweet_harvester.py", og den skal legges inn...
 - Nødvendige pakker og moduler man trenger å laste ned er: afinn, PyMovieDb (brukes til å hente ratings fra imdb), PySpark, Kafka-Python
 
 
-Slik kjører du programmet: 
+### Slik kjører du programmet: 
 - Først må du starte HDFS og Yarn med: "start-all.sh" i sparkdriver. 
 - Så starter du zookeeper på driver, worker 1 og worker 2. 
 - Og til slutt start kafka server på alle nodene (driver, worker 1, worker 2 og worker 3)
@@ -20,9 +20,8 @@ Slik kjører du programmet:
 - Så kan alt stoppes ved å skrive i driveren: "stop-all.sh"
 
 
-- Vi har lagt ved en kort video som viser hvordan vi kjører systemet.
-- I tillegg har vi lagt til 3 lysbilder i enden av presentasjonen fra sist: Brukstilfeller/Use Case, Brukstilfeller/Use Case (2), og Kilder. / 
-Her forteller vi hva systemet kan brukes til med et spesifikt eksempel, og i tillegg kildene vi har brukt til prosjektet vårt. 
+
+## Her forteller vi hva systemet kan brukes til med et spesifikt eksempel, og i tillegg kildene vi har brukt til prosjektet vårt. 
 - Som output, har vi lagt inn query for to forskjellige dataframes. De har navnene "output1" og "output2"./
   Som default er output1 skrudd på og output2 skrudd av: 
   output1 gir den joinede dataframen med kolonnene "id", "tweet_text", "movie_name", "afinn_score" og "imdb_rating".
