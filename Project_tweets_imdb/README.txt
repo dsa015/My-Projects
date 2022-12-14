@@ -1,3 +1,7 @@
+PROJECT ABOUT SCRAPING TWEETS ABOUT MOVIES, DOING SENTIMENT ANALYSIS AND COMPARE THEM TO IMDB MOVIE'S RATINGS
+
+
+
 README file til gruppeprosjekt i INFO319 Big Data: En sentimental analyse av movie-tweets fra twitter, sammenlignet med ratings fra imdb
 Kandidatnr: 117 og 130
  
